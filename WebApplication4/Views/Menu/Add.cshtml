@@ -1,0 +1,21 @@
+﻿@using WebApplication4.Models.Menu
+@model Item
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+<h1>Додавання пункту меню</h1>
+<form method="post" action="Add">
+  <div class="mb-3">
+    <label for="Name" class="form-label">Назва пункту</label>
+    <input type="text" class="form-control" id="Name" asp-for="Name" />   
+  </div> 
+  <div class="mb-3">
+    <label for="Link" class="form-label">Посилання</label>
+    <input type="text" class="form-control" id="Link" asp-for="Link" />   
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
